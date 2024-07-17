@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulticastApp", "MulticastApp.csproj", "{9BA0749A-84C5-4184-BB30-5247102035C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BA0749A-84C5-4184-BB30-5247102035C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA0749A-84C5-4184-BB30-5247102035C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA0749A-84C5-4184-BB30-5247102035C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA0749A-84C5-4184-BB30-5247102035C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C10103DB-86CD-432A-B988-FF4363ECFFFB}
+	EndGlobalSection
+EndGlobal
