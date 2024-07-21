@@ -87,11 +87,11 @@ static void StartReceiver(string multicastGroup, int multicastPort, ref bool qui
                 byte[] data = udpClient.Receive(ref localEndPoint);
                 try {
                     string message = Encoding.UTF8.GetString(data);
-                    Console.WriteLine($"{DateTime.Now} = Received: {message}");
+                    Console.WriteLine($"{DateTime.Now} = Received from \"{localEndPoint.Address}:{localEndPoint.Port}\": {message}");
                 } catch (DecoderFallbackException) {
-                    Console.WriteLine($"{DateTime.Now} = Received (Not in UTF8): Bytes Length ({data.Length})");
+                    Console.WriteLine($"{DateTime.Now} = Received (Not in UTF8) from \"{localEndPoint.Address}:{localEndPoint.Port}\": Bytes Length ({data.Length})");
                 } catch (Exception) {
-                    Console.WriteLine($"{DateTime.Now} = Received but encounter exception while trying to convert data into UTF8");
+                    Console.WriteLine($"{DateTime.Now} = Received from \"{localEndPoint.Address}:{localEndPoint.Port}\": Encounter exception while trying to convert data into UTF8");
                 }
             }
         }
